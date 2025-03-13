@@ -1,0 +1,7 @@
+mixin navItem(item)
+  li
+    a(href=`${item.to}` aria-label=`${item.title}` class=`navigation__link ${item.linkClass}`)
+      svg(width='24px' height='24px' class=`navigation__${item.iconClass}`)
+        use(xlink:href=`./images/sprite.svg#${item.icon}`)
+
+      span= item.title

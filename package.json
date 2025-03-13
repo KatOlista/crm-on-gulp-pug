@@ -1,0 +1,83 @@
+{
+  "name": "crm-project",
+  "author": "KatOlista",
+  "version": "1.0.0",
+  "license": "ISC",
+  "type": "module",
+  "keywords": [
+    "gulp",
+    "js",
+    "sass",
+    "pug"
+  ],
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "prepare": "husky",
+    "test": ""
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.pug": "pug-lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@eslint/js": "^9.19.0",
+    "browser-sync": "^3.0.3",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-data": "^1.3.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlhint": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettier": "^6.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sass-glob-use-forward": "^0.1.3",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "pug": "^3.0.3",
+    "pug-lint": "^2.7.0",
+    "sass": "^1.83.4",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "last 4 versions",
+    "ie >= 10"
+  ]
+}

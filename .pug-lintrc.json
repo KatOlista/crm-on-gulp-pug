@@ -1,0 +1,20 @@
+{
+  "validateDivTags": true,
+  "validateAttributeQuoteMarks": "'",
+  "validateLineBreaks": "LF",
+  "validateAttributeSeparator": { "separator": " ", "multiLineSeparator": "\n" },
+  "requireSpecificAttributes": [ { "img": [ "src", "alt" ] } ],
+  "requireSpaceAfterCodeOperator": true,
+  "requireLowerCaseTags": true,
+  "requireLowerCaseAttributes": true,
+  "requireLineFeedAtFileEnd": true,
+  "requireStrictEqualityOperators": true,
+  "requireClassLiteralsBeforeIdLiterals": true,
+  "requireClassLiteralsBeforeAttributes": true,
+  "requireIdLiteralsBeforeAttributes": true,
+  "disallowTrailingSpaces": true,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowLegacyMixinCall": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowDuplicateAttributes": true
+}

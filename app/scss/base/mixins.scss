@@ -1,0 +1,17 @@
+@mixin bigscreen() {
+  @media (min-width: var(--bigDesctopMinWidth)) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: var(--desktopMinWidth)) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: var(--tabletMinWidth)) {
+    @content;
+  }
+}
