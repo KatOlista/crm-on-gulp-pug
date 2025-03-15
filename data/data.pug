@@ -1,0 +1,857 @@
+-
+  const customers = [
+    {
+      "slug": 1,
+      "customer name": "Jane Cooper",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "jane@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 2,
+      "customer name": "John Doe",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "john@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 3,
+      "customer name": "Emily Chen",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "emily@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 4,
+      "customer name": "Michael Davis",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "michael@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 5,
+      "customer name": "Sarah Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "sarah@apple.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 6,
+      "customer name": "Kevin White",
+      "company": "IBM",
+      "phone number": "(567) 890-1234",
+      "email": "kevin@ibm.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 7,
+      "customer name": "Lisa Nguyen",
+      "company": "Oracle",
+      "phone number": "(234) 567-8901",
+      "email": "lisa@oracle.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 8,
+      "customer name": "David Kim",
+      "company": "Samsung",
+      "phone number": "(456) 789-0123",
+      "email": "david@samsung.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 9,
+      "customer name": "Jessica Martin",
+      "company": "Cisco",
+      "phone number": "(789) 012-3456",
+      "email": "jessica@cisco.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 10,
+      "customer name": "Brian Hall",
+      "company": "Intel",
+      "phone number": "(012) 345-6789",
+      "email": "brian@intel.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 11,
+      "customer name": "Amanda Brown",
+      "company": "Dell",
+      "phone number": "(345) 678-9012",
+      "email": "amanda@dell.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 12,
+      "customer name": "Christopher Lee",
+      "company": "HP",
+      "phone number": "(567) 890-1234",
+      "email": "christopher@hp.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 13,
+      "customer name": "Rebecca Taylor",
+      "company": "Lenovo",
+      "phone number": "(789) 012-3456",
+      "email": "rebecca@lenovo.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 14,
+      "customer name": "Matthew Walker",
+      "company": "Asus",
+      "phone number": "(901) 234-5678",
+      "email": "matthew@asus.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 15,
+      "customer name": "Olivia Harris",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "olivia@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 16,
+      "customer name": "Alexander Brown",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "alexander@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 17,
+      "customer name": "Sophia Patel",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "sophia@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 18,
+      "customer name": "Ethan Hall",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "ethan@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 19,
+      "customer name": "Mia Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "mia@apple.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 20,
+      "customer name": "Logan White",
+      "company": "IBM",
+      "phone number": "(567) 890-1234",
+      "email": "logan@ibm.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 21,
+      "customer name": "Ava Nguyen",
+      "company": "Oracle",
+      "phone number": "(234) 567-8901",
+      "email": "ava@oracle.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 22,
+      "customer name": "Liam Kim",
+      "company": "Samsung",
+      "phone number": "(456) 789-0123",
+      "email": "liam@samsung.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 23,
+      "customer name": "Julia Martin",
+      "company": "Cisco",
+      "phone number": "(789) 012-3456",
+      "email": "julia@cisco.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 24,
+      "customer name": "Gabriel Hall",
+      "company": "Intel",
+      "phone number": "(012) 345-6789",
+      "email": "gabriel@intel.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 25,
+      "customer name": "Isabella Brown",
+      "company": "Dell",
+      "phone number": "(345) 678-9012",
+      "email": "isabella@dell.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 26,
+      "customer name": "Elijah Lee",
+      "company": "HP",
+      "phone number": "(567) 890-1234",
+      "email": "elijah@hp.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 27,
+      "customer name": "Abigail Taylor",
+      "company": "Lenovo",
+      "phone number": "(789) 012-3456",
+      "email": "abigail@lenovo.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 28,
+      "customer name": "William Walker",
+      "company": "Asus",
+      "phone number": "(901) 234-5678",
+      "email": "william@asus.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 29,
+      "customer name": "Emily Chen",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "emily@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 30,
+      "customer name": "Jackson Brown",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "jackson@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 31,
+      "customer name": "Hannah Patel",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "hannah@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 32,
+      "customer name": "Oliver Hall",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "oliver@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 33,
+      "customer name": "Lily Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "lily@apple.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 34,
+      "customer name": "Benjamin White",
+      "company": "IBM",
+      "phone number": "(567) 890-1234",
+      "email": "benjamin@ibm.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 35,
+      "customer name": "Charlotte Nguyen",
+      "company": "Oracle",
+      "phone number": "(234) 567-8901",
+      "email": "charlotte@oracle.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 36,
+      "customer name": "Alexander Kim",
+      "company": "Samsung",
+      "phone number": "(456) 789-0123",
+      "email": "alexander@samsung.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 37,
+      "customer name": "Sophia Martin",
+      "company": "Cisco",
+      "phone number": "(789) 012-3456",
+      "email": "sophia@cisco.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 38,
+      "customer name": "Ethan Hall",
+      "company": "Intel",
+      "phone number": "(012) 345-6789",
+      "email": "ethan@intel.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 39,
+      "customer name": "Mia Brown",
+      "company": "Dell",
+      "phone number": "(345) 678-9012",
+      "email": "mia@dell.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 40,
+      "customer name": "Logan Lee",
+      "company": "HP",
+      "phone number": "(567) 890-1234",
+      "email": "logan@hp.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 41,
+      "customer name": "Ava Taylor",
+      "company": "Lenovo",
+      "phone number": "(789) 012-3456",
+      "email": "ava@lenovo.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 42,
+      "customer name": "Liam Walker",
+      "company": "Asus",
+      "phone number": "(901) 234-5678",
+      "email": "liam@asus.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 43,
+      "customer name": "Julia Chen",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "julia@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 44,
+      "customer name": "Gabriel Brown",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "gabriel@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 45,
+      "customer name": "Isabella Patel",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "isabella@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 46,
+      "customer name": "Elijah Hall",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "elijah@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 47,
+      "customer name": "Abigail Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "abigail@apple.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 48,
+      "customer name": "Harrison White",
+      "company": "IBM",
+      "phone number": "(567) 890-1234",
+      "email": "harrison@ibm.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 49,
+      "customer name": "Ava Nguyen",
+      "company": "Oracle",
+      "phone number": "(234) 567-8901",
+      "email": "ava@oracle.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 50,
+      "customer name": "Landon Kim",
+      "company": "Samsung",
+      "phone number": "(456) 789-0123",
+      "email": "landon@samsung.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 51,
+      "customer name": "Piper Martin",
+      "company": "Cisco",
+      "phone number": "(789) 012-3456",
+      "email": "piper@cisco.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 52,
+      "customer name": "Rowan Hall",
+      "company": "Intel",
+      "phone number": "(012) 345-6789",
+      "email": "rowan@intel.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 53,
+      "customer name": "Remi Brown",
+      "company": "Dell",
+      "phone number": "(345) 678-9012",
+      "email": "remi@dell.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 54,
+      "customer name": "Caleb Lee",
+      "company": "HP",
+      "phone number": "(567) 890-1234",
+      "email": "caleb@hp.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 55,
+      "customer name": "Julian Taylor",
+      "company": "Lenovo",
+      "phone number": "(789) 012-3456",
+      "email": "julian@lenovo.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 56,
+      "customer name": "Gavin Walker",
+      "company": "Asus",
+      "phone number": "(901) 234-5678",
+      "email": "gavin@asus.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 57,
+      "customer name": "Sofia Chen",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "sofia@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 58,
+      "customer name": "Mateo Brown",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "mateo@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 59,
+      "customer name": "Ariana Patel",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "ariana@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 60,
+      "customer name": "Ezra Hall",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "ezra@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 61,
+      "customer name": "Luna Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "luna@apple.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 62,
+      "customer name": "Harrison White",
+      "company": "IBM",
+      "phone number": "(567) 890-1234",
+      "email": "harrison@ibm.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 63,
+      "customer name": "Ava Nguyen",
+      "company": "Oracle",
+      "phone number": "(234) 567-8901",
+      "email": "ava@oracle.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 64,
+      "customer name": "Landon Kim",
+      "company": "Samsung",
+      "phone number": "(456) 789-0123",
+      "email": "landon@samsung.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 65,
+      "customer name": "Piper Martin",
+      "company": "Cisco",
+      "phone number": "(789) 012-3456",
+      "email": "piper@cisco.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 66,
+      "customer name": "Rowan Hall",
+      "company": "Intel",
+      "phone number": "(012) 345-6789",
+      "email": "rowan@intel.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 67,
+      "customer name": "Remi Brown",
+      "company": "Dell",
+      "phone number": "(345) 678-9012",
+      "email": "remi@dell.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 68,
+      "customer name": "Caleb Lee",
+      "company": "HP",
+      "phone number": "(567) 890-1234",
+      "email": "caleb@hp.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 69,
+      "customer name": "Julian Taylor",
+      "company": "Lenovo",
+      "phone number": "(789) 012-3456",
+      "email": "julian@lenovo.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 70,
+      "customer name": "Gavin Walker",
+      "company": "Asus",
+      "phone number": "(901) 234-5678",
+      "email": "gavin@asus.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 71,
+      "customer name": "Sofia Chen",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "sofia@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 72,
+      "customer name": "Mateo Brown",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "mateo@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 73,
+      "customer name": "Ariana Patel",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "ariana@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 74,
+      "customer name": "Ezra Hall",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "ezra@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 75,
+      "customer name": "Luna Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "luna@apple.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 76,
+      "customer name": "Harrison White",
+      "company": "IBM",
+      "phone number": "(567) 890-1234",
+      "email": "harrison@ibm.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 77,
+      "customer name": "Ava Nguyen",
+      "company": "Oracle",
+      "phone number": "(234) 567-8901",
+      "email": "ava@oracle.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 78,
+      "customer name": "Landon Kim",
+      "company": "Samsung",
+      "phone number": "(456) 789-0123",
+      "email": "landon@samsung.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 79,
+      "customer name": "Piper Martin",
+      "company": "Cisco",
+      "phone number": "(789) 012-3456",
+      "email": "piper@cisco.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 80,
+      "customer name": "Rowan Hall",
+      "company": "Intel",
+      "phone number": "(012) 345-6789",
+      "email": "rowan@intel.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 81,
+      "customer name": "Remi Brown",
+      "company": "Dell",
+      "phone number": "(345) 678-9012",
+      "email": "remi@dell.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 82,
+      "customer name": "Caleb Lee",
+      "company": "HP",
+      "phone number": "(567) 890-1234",
+      "email": "caleb@hp.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 83,
+      "customer name": "Julian Taylor",
+      "company": "Lenovo",
+      "phone number": "(789) 012-3456",
+      "email": "julian@lenovo.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 84,
+      "customer name": "Gavin Walker",
+      "company": "Asus",
+      "phone number": "(901) 234-5678",
+      "email": "gavin@asus.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 85,
+      "customer name": "Sofia Chen",
+      "company": "Microsoft",
+      "phone number": "(225) 555-0118",
+      "email": "sofia@microsoft.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "slug": 86,
+      "customer name": "Mateo Brown",
+      "company": "Google",
+      "phone number": "(555) 123-4567",
+      "email": "mateo@google.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "slug": 87,
+      "customer name": "Ariana Patel",
+      "company": "Amazon",
+      "phone number": "(876) 543-2109",
+      "email": "ariana@amazon.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "slug": 88,
+      "customer name": "Ezra Hall",
+      "company": "Facebook",
+      "phone number": "(345) 678-9012",
+      "email": "ezra@facebook.com",
+      "country": "Australia",
+      "status": "Inactive"
+    },
+    {
+      "slug": 89,
+      "customer name": "Luna Lee",
+      "company": "Apple",
+      "phone number": "(901) 234-5678",
+      "email": "luna@apple.com",
+      "country": "United States",
+      "status": "Active"
+    }
+  ]
+
+-
+  const menu = [
+    {
+      "to": "index.html",
+      "linkClass": "navigation__home",
+      "iconClass": "icon-stroke svg-key-square-dims",
+      "icon": "key-square",
+      "title": "Dashboard"
+    },
+    {
+      "to": "productPage.html",
+      "linkClass": "navigation__product",
+      "iconClass": "icon-fill svg-3d-square-dims",
+      "icon": "3d-square",
+      "title": "Product"
+    },
+    {
+      "to": "customersPage.html",
+      "linkClass": "navigation__customers",
+      "iconClass": "icon-stroke svg-user-square-dims",
+      "icon": "user-square",
+      "title": "Customers"
+    },
+    {
+      "to": "incomePage.html",
+      "linkClass": "navigation__income",
+      "iconClass": "icon-stroke svg-wallet-money-dims",
+      "icon": "wallet-money",
+      "title": "Income"
+    },
+    {
+      "to": "promotePage.html",
+      "linkClass": "navigation__promote",
+      "iconClass": "icon-fill svg-discount-shape-dims",
+      "icon": "discount-shape",
+      "title": "Promote"
+    },
+    {
+      "to": "helpPage.html",
+      "linkClass": "navigation__help",
+      "iconClass": "icon-fill svg-message-question-dims",
+      "icon": "message-question",
+      "title": "Help"
+    }
+  ]
+
+-
+  const user = {
+    "name": "Evano",
+    "role": "Project Manager",
+    "image": "./images/avatar.webp"
+  }
