@@ -1,6 +1,7 @@
 .menu {
   padding: 24px 24px 76px 20px;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -37,6 +38,7 @@
 
   &__button {
     padding-inline: 10px;
+    display: flex;
   }
 
   &__icon {
@@ -51,8 +53,13 @@
     stroke: #5932ea;
   }
 
+  @media (max-width: 426px) {
+    // width: 100%;
+  }
+
   @media (min-width: 768px) {
     padding: 36px 36px 76px 40px;
+    width: auto;
 
     &__heading {
       justify-content: normal;
@@ -63,15 +70,11 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     position: absolute;
     height: 100%;
     left: -100%;
     z-index: 3;
     gap: 30px;
-  }
-
-  @media (max-width: 426px) {
-    width: 100%;
   }
 }

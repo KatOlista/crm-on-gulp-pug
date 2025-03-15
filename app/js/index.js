@@ -1,7 +1,2 @@
-// import { mobileNav } from './modules/mobile-nav.js';
-
-// mobileNav();
-
-// import customers from '../data/customers.json';
-
-// console.log(customers);
+import { showMenu } from './modules/showMenu.js';
+showMenu();

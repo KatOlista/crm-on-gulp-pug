@@ -71,7 +71,7 @@ function pugPages() {
 
 function stylesDev() {
   return src(['app/scss/*.scss'])
-    .pipe(newer('app/scss/*.scss'))
+    .pipe(newer('app/scss/**/*.scss'))
     .pipe(plumber(plumberNotify('Styles')))
     .pipe(sourceMaps.init())
     .pipe(sassGlob())
